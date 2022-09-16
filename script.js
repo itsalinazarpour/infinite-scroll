@@ -8,7 +8,7 @@ const randomRGB = function () {
 let markup = "";
 for (let i = 0; i <= 2000; i++) {
   const randomColor = `rgb(${randomRGB()}, ${randomRGB()}, ${randomRGB()})`;
-  markup += `<div class="line" onmouseout="this.innerHTML = '', false" onmouseover="this.innerHTML = '${randomColor}'" title="Color: ${randomColor}" style="background-color: ${randomColor}"></div>`;
+  markup += `<div class="line" onmouseout="this.innerHTML = '', false" onmouseover="this.innerHTML = '&nbsp;${randomColor}&nbsp;'" title="Color: ${randomColor}" style="background-color: ${randomColor}"></div>`;
 }
 
 // append murkup to body function
