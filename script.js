@@ -1,28 +1,29 @@
 "use strict";
-
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-};
-
-const randomColor = function () {
+// random number between 0 and 255
+const randomRGB = function () {
   return Math.floor(Math.random() * 256);
 };
 
-const markup = "<hr>".repeat(2000);
+// create markup
+let markup = "";
+for (let i = 0; i <= 2000; i++) {
+  markup += `<hr style="border-bottom: 30px solid rgb(${randomRGB()},${randomRGB()},${randomRGB()})">`;
+}
 
-const addDiv = function () {
+// append murkup to body function
+const addLines = function () {
   document.querySelector("body").innerHTML += markup;
-  const lines = document.querySelectorAll("hr");
-
-  lines.forEach((line) => {
-    line.style.borderBottom = `30px solid rgba(${randomColor()},${randomColor()},${randomColor()})`;
-  });
 };
-addDiv();
+addLines();
 
+// append murkup to body when user reachs to the bottom
 window.onscroll = function (ev) {
-  console.log("hi");
   if (window.innerHeight + window.scrollY + 100 >= document.body.offsetHeight) {
-    addDiv();
+    addLines();
   }
+};
+
+// bring scroll to top ot the page before reloading
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
 };
