@@ -4,5 +4,10 @@
 ### Made with vanilla JS, infinite scrolling with random colors.
 ### Live demo:  <a href="https://infinite-scroll-v2.netlify.app/">https://infinite-scroll-v2.netlify.app/</a>
 
- 
+<br>
+<br>
+
+> npm start
+
+> npm run build
 
