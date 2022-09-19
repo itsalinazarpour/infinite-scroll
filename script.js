@@ -13,7 +13,7 @@ for (let i = 0; i <= 4000; i++) {
   const randomColor = `rgb(${randomInt(255)}, ${randomInt(255)}, ${randomInt(
     255
   )})`;
-  markup += `<div class="line"  title="Color: ${randomColor} " style="background-color: ${randomColor}"></div>`;
+  markup += `<div class="line" onclick = "void(0)"  title="Color: ${randomColor} " style="background-color: ${randomColor}"></div>`;
 }
 
 // append murkup to body function
