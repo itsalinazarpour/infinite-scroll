@@ -37,6 +37,11 @@ body.addEventListener("mouseover", function (e) {
 
 // append murkup to body when user reachs to the bottom
 window.addEventListener("scroll", function () {
+  this.document.querySelector("h1").style.opacity = 0;
+  this.setTimeout(() => {
+    this.document.querySelector("h1").style.display = "none";
+  }, 1000);
+
   if (window.innerHeight + window.scrollY + 100 >= document.body.offsetHeight) {
     addLines();
   }
