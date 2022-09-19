@@ -32,9 +32,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: sans-serif;
+  font-family: "Franklin Gothic Medium", serif;
   font-weight: 900;
+  font-size: 18px;
 
+  @media (max-width: 350px) {
+    font-size: 14px;
+  }
   @media (max-width: 210px) {
     font-size: 13px;
   }
@@ -86,7 +90,7 @@ html {
   left: 4px;
 
   button {
-    font-size: 16px;
+    font-size: 18px;
     background-color: black;
     color: wheat;
     border: none;
@@ -94,6 +98,13 @@ html {
     cursor: pointer;
     padding: 0 5px;
     border-radius: 3px;
+
+    @media (max-width: 350px) {
+      font-size: 14px;
+    }
+    @media (max-width: 210px) {
+      font-size: 13px;
+    }
   }
 }
 
