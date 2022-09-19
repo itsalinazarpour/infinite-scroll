@@ -53,6 +53,7 @@ html {
   font-family: "Franklin Gothic Medium", serif;
   white-space: nowrap;
   overflow: hidden;
+  z-index: 2;
 
   p {
     text-decoration: none;
@@ -115,7 +116,7 @@ h1 {
   text-align: center;
   width: 100%;
   padding: 3rem 0;
-  transition: all 1s;
+  transition: all 1s 1s;
 
   @media (max-width: 800px) {
     font-size: 4rem;

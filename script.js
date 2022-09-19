@@ -40,7 +40,7 @@ window.addEventListener("scroll", function () {
   this.document.querySelector("h1").style.opacity = 0;
   this.setTimeout(() => {
     this.document.querySelector("h1").style.display = "none";
-  }, 1000);
+  }, 2000);
 
   if (window.innerHeight + window.scrollY + 100 >= document.body.offsetHeight) {
     addLines();
